@@ -1,0 +1,38 @@
+/* 3.2.c*/
+/* function  */
+
+////// 3.2  //////
+
+#include <stdio.h>
+#include <math.h>
+
+#define SUCCESS 0
+#define PI 3.1416
+#define FREQ 1
+#define WIDTH 55
+
+void plotval(float value, int width);
+
+int main()
+	{
+    unsigned long int x = 0;
+    float y;
+    while(1){
+      y=(sin(x*PI/180)*0.5 + 0.5);
+      x+=FREQ;
+      plotval(y,WIDTH);
+    }
+
+		return SUCCESS;
+	}
+
+void plotval(float value, int width)
+  {
+    int place, i;
+  	place = value * width;
+  	for ( i=0; i < place; i++)
+    {
+  		printf(" ");
+  	}
+  	printf("*\n");
+  }
