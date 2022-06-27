@@ -1,7 +1,7 @@
 /* 3.3.c*/
 /* function  */
 
-////// 3.2  //////
+////// 3.3  //////
 
 #include <stdio.h>
 #include <math.h>
