@@ -15,11 +15,11 @@
 
 int main()
 	{
-    MARK
+    MARK;
     
 
 
-		MARK
+		MARK;
 		return SUCCESS;
 	}
 
