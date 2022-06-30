@@ -3,16 +3,6 @@
 
 ////  4 Optional Additional Work    ////
 
-////////////////////////////////////////////
-// evol.c                                 //
-// ELEC1201 Lab C3: Operators and Arrays  //
-// Evolutionary Computing                 //
-// KPZ 2018, MIT License                  //
-//                                        //
-// Compile with math library:             //
-//    gcc evol.c -lm -o evol              //
-////////////////////////////////////////////
-
 // oh my days I'm terrible at coding :(  //
 
 #include <stdio.h>
@@ -22,10 +12,10 @@
 #include <string.h>
 
 #define TARGET   1.0
-#define EPSILON    0.02
+#define EPSILON    0.01
 
 #define POP_SIZE     51
-#define MAX_GEN    100
+#define MAX_GEN    1000000
 
 #define MUTATION_STRENGTH  0.1
 #define RND_INIT           2
@@ -136,7 +126,7 @@ void copyarray (float *copyfrom, float *copyto, int size){
 
 void fanss(float attractivebeing, float mutst, float *pop, int fansize, int index){
 	for (int i=0; i<fansize; i++){
-		pop[index] = attractivebeing; + (rnd()-0.5)*mutst;
+		pop[index] = attractivebeing + (rnd()-0.5)*mutst;
     index++;
 	}
 }
