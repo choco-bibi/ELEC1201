@@ -101,4 +101,4 @@ int main(void){
       while(1);
 }
 
-//as you can see from the box on the top I was really gettnig into it
+//as you can see from the box on the top I was really getting into it
