@@ -1,0 +1,9 @@
+towards the end you need to comment out the int main() inside vector.c and matrix.c as only 1 main can exist for a project/program
+
+make
+gcc-c circuit.c -pedantic -Wall
+gcc analyse.c circuit.o matric.o vector.o -o analyse -pedantic -Wall
+
+analyse Syntax: analyse <filename>
+
+analyse example.cir
